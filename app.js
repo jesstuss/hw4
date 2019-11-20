@@ -4,7 +4,6 @@ const faker = require('faker');
 app.engine('html', require('ejs').renderFile);
 app.use(express.static("public"));
 
-
 //routes
 app.get("/", function(req, res){
     res.render("index.html", {randomLastName:faker.name.lastName()});
